@@ -1,0 +1,12 @@
+# Generar un SECRET_KEY
+python -c 'import secrets; print(secrets.token_hex())'
+
+flask run
+
+flask db init
+flask db migrate -m "Initial_db"
+flask db upgrade
+
+
+https://trackit.io/aws-api-gateway-create-api-python-cognito-serverless/
+https://binli.hashnode.dev/verify-cognito-jwt-in-a-flask-application
